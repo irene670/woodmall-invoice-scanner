@@ -1,0 +1,8 @@
+{
+  "name": "Invoice Scanner AI",
+  "description": "Scan Taiwan invoices using camera, extract data using Gemini, and prepare for Excel export.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
