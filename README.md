@@ -8,6 +8,10 @@
 
 專案採 Cloudflare Worker 提供前端與 API，Gemini API Key 僅存在 Cloudflare Secret，不會進入前端 bundle 或 Git 紀錄。
 
+## 正式網址
+
+https://woodmall-invoice-scanner.irene-774.workers.dev
+
 ## 本地開發
 
 **需求：** Node.js 20 以上、Cloudflare 帳號
@@ -23,6 +27,8 @@ npx wrangler login
 npx wrangler secret put GEMINI_API_KEY
 npm run deploy
 ```
+
+公開網址的 API 僅接受同網域瀏覽器請求，並以每個瀏覽器每分鐘 60 次為上限。如需強制限定公司帳號存取，可再加上 Cloudflare Access。
 
 ## 檢查
 
